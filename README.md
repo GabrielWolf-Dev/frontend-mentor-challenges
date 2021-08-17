@@ -1,2 +1,2 @@
 # frontend-mentor-challenges
- These repository is designated for make websites challenges by Frontend Mentor
+ These repository is designated for make websites challenges by [Frontend Mentor](https://www.frontendmentor.io/)
