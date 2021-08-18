@@ -11,14 +11,13 @@
     }
 }
 
-@mixin btn($width, $border, $bg, $color-text, $box-shadow) {
+@mixin btn($width, $border, $bg, $color-text) {
     width: $width;
     height: 42px;
     border: $border;
     background-color: $bg;
     color: $color-text;
-    box-shadow: $box-shadow;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 8px;
 }

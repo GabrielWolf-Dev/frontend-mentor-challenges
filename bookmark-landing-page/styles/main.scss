@@ -1,15 +1,18 @@
 @import './elements/reset';
 @import './settings/colors';
+@import './settings/variables';
 @import './generic/base';
 
 // Objects:
 @import './objects/fonts';
+@import './objects/el-colors';
 
 // Mixins:
 @import './tools/mixins'; 
 
 // Layout:
 @import './components/header';
+@import './components/banner';
 
 // Utilities:
 @import './utilities';
