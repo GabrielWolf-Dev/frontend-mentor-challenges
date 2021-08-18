@@ -12,29 +12,40 @@
 </head>
 <body>
   
-  <header class="container">
+  <header class="header">
     <img src="./assets/images/logo-bookmark.svg" alt="Logo Boockmark" />
 
-    <button class="btn-menu-mobile"><i class="fas fa-bars"></i></button>
-    <nav class="nav-mobile">
-      <header class="nav-mobile__header">
-        <img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" />
-        <button class="btn-menu-mobile"><i class="fas fa-times"></i></button>
-      </header>
+    <div class="nav-mobile-box">
+      <button class="btn-menu-open"><i class="fas fa-bars"></i></button>
+      <nav class="nav-mobile">
+        <header class="nav-mobile__header">
+          <img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" />
+          <button class="btn-menu-close"><i class="fas fa-times"></i></button>
+        </header><!--nav-mobile__header-->
 
-      <ul class="nav-mobile__nav">
-        <li class="nav__items"><a class="text-white nav-links" href="#">Features</a></li>
-        <li class="nav__items"><a class="text-white nav-links" href="#">Pricing</a></li>
-        <li class="nav__items"><a class="text-white nav-links" href="#">Contact</a></li>
+        <ul class="nav-mobile__nav">
+          <li class="nav__items"><a class="text-white nav-links" href="#">Features</a></li>
+          <li class="nav__items"><a class="text-white nav-links" href="#">Pricing</a></li>
+          <li class="nav__items"><a class="text-white nav-links" href="#">Contact</a></li>
+          <button class="btn-login">Login</button>
+        </ul><!--nav-mobile__nav-->
+
+        <footer class="nav-mobile__footer">
+          <a class="icons text-white" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+          <a class="icons text-white" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        </footer><!--nav-mobile__footer-->
+      </nav><!--nav-mobile-->
+    </div><!--"nav-mobile-box-->
+
+    <nav class="nav-desktop">
+      <ul class="nav-desktop__list">
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Features</a></li>
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Pricing</a></li>
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Contact</a></li>
         <button class="btn-login">Login</button>
       </ul>
-
-      <footer class="nav-mobile__footer">
-        <a class="icons text-white" href="https://pt-br.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        <a class="icons text-white" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-      </footer>
     </nav>
-  </header>
+  </header><!--header-->
   
   A Simple Bookmark Manager
 
@@ -146,5 +157,6 @@
     </p>
   </footer>
   <script src="./js/libs/all.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
