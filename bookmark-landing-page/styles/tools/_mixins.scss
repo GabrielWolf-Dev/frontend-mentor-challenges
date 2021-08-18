@@ -1,0 +1,23 @@
+@mixin container($width, $display, $m-y) {
+    width: 100%;
+    max-width: $width;
+    display: $display;
+    padding: 0 2%;
+    
+    @if($display == 'grid') {
+        margin: $m-y 0;
+    } @else {
+        margin: $m-y auto;
+    }
+}
+
+@mixin btn($width, $border, $bg, $color-text) {
+    width: $width;
+    height: 42px;
+    border: $border;
+    background-color: $bg;
+    color: $color-text;
+    font-size: 1.15rem;
+    font-weight: 500;
+    border-radius: 8px;
+}
