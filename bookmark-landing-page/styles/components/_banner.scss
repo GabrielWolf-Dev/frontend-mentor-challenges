@@ -1,5 +1,5 @@
 .banner {
-    @include container(768px, flex, 48px);
+    @include container($w-mobile, flex, 48px);
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
@@ -15,11 +15,9 @@
     .banner__btns {
         $width: 180px;
         box-shadow: $box-shadow;
-        margin: 0 8px;
+        margin: 16px 8px;
 
-       &:nth-of-type(1) {
-        @include btn($width, 0, $dark-blue, white);
-       }
+       &:nth-of-type(1) { @include btn($width, 0, $dark-blue, white); }
        &:nth-of-type(2) { @include btn($width, 0, white, $dark-blue); }
     }
 
@@ -31,7 +29,6 @@
         .banner__img {
             width: 100%;
             max-width: 450px;
-            margin: auto;
             display: block;
             z-index: 0;
         }
@@ -51,7 +48,7 @@
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $w-mobile) {
         @include container(100%, flex, 48px);
         justify-content: space-between;
         align-items: center;
@@ -60,9 +57,7 @@
         padding-left: 2%;
         padding-right: 0;
         
-        .content {
-            padding: 24px 0;
-        }
+        .content { padding: 24px 0; }
 
         .banner__img-box > .banner__img { width: 550px; }
         .banner__img-box > .banner__bg-el { width: 400px; }

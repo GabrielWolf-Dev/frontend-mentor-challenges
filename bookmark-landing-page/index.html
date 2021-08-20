@@ -17,7 +17,7 @@
 
     <div class="nav-mobile-box">
       <button class="btn-menu-open"><i class="fas fa-bars"></i></button>
-      <nav class="nav-mobile">
+      <nav class="nav-mobile p-res-48">
         <header class="nav-mobile__header">
           <img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" />
           <button class="btn-menu-close"><i class="fas fa-times"></i></button>
@@ -57,30 +57,59 @@
 
       <button class="banner__btns">Get it on Chrome</button>
       <button class="banner__btns">Get it on Firefox</button>
-    </main>
+    </main><!--banner__content-->
 
     <div class="banner__img-box">
-      <img class="banner__img" src="./assets/images/illustration-hero.svg" alt="Illustration hero">
+      <img class="banner__img m-auto" src="./assets/images/illustration-hero.svg" alt="Illustration hero">
       <img class="banner__bg-el" src="./assets/images/bg-el.svg" alt="Background element">
-    </div>
-  </section>
+    </div><!--banner__img-box-->
+  </section><!--banner-->
 
   <br>
-  Features
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+  <section class="features">
+    <h2 class="subtitle text-blue-dark">Features</h2>
+    <p class="content m-y-24 text-gray">
+      Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.
+    </p><!--content-->
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
+    <ul class="features__list m-y-48">
+      <li class="features__item features__item--selected">
+        Simple Bookmarking
+        <span data-isSelected="true"></span>
+      </li>
+      <li class="features__item">
+        Speedy Searching
+        <span data-isSelected="false"></span>
+      </li>
+      <li class="features__item">
+        Easy Sharing
+        <span data-isSelected="false"></span>
+      </li>
+    </ul>
 
-  Bookmark in one click
+    <main class="features__tab">
+      <img class="features__tab__img" src="./assets/images/illustration-features-tab-1.svg" alt="Feature Tab 1">
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+      <div class="features__tab__content">
+        <h3 class="subtitle text-blue-dark">Bookmark in one click</h3>
 
-  More Info
+        <p class="features__tab__content">
+          Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.
+        </p><!--content-->
+
+        <button class="features__tab__btn">More Info</button>
+      </div>
+    </main>
+  </section><!--features-->
+
+  
+  
+  
+
+  
 
   Intelligent search
 

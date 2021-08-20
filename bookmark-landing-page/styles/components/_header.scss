@@ -1,17 +1,5 @@
-// Objects:
-.border-line-top {
-    width: 80%;
-    border-top: rgba(255, 255, 255, 0.8) 1px solid;
-}
-
-.border-line-bottom {
-    width: 80%;
-    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
-}
-
 .header {
-    @include container(calc(720px - 2%), flex, 0);
-    padding: 24px 2%;
+    @include container(calc(720px - 2%), flex, 24px);
     justify-content: space-between;
     align-items: center;
 }
@@ -34,7 +22,6 @@
     text-align: center;
     background-color: $dark-blue-opacity;
     color: white;
-    padding: 48px 2%;
     transition: all ease-out .3s;
 }
 
@@ -56,12 +43,13 @@
     margin-top: 24px;
 
     .nav__items {
+        $color-border-lines: rgba(255, 255, 255, 0.8);
         margin: 0 auto;
         padding: 16px 0;
-        @extend .border-line-top;
+        @include borderLineTop($color-border-lines);
 
         &:nth-of-type(3) {
-            @extend .border-line-bottom;
+            @include borderLineBottom($color-border-lines);
             margin-bottom: 24px;
         }
     }
@@ -85,10 +73,9 @@
 }
 
 // Desktop:
-@media (min-width: 768px) {
+@media (min-width: $w-mobile) {
     .header {
-        @include container(1280px, flex, none);
-        padding: 24px 2%;
+        @include container($w-desktop, flex, 24px);
         justify-content: space-between;
         align-items: center;
     }

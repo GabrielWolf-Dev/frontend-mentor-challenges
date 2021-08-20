@@ -1,3 +1,5 @@
+$w-mixin-border-lines: 80%;
+
 @mixin container($width, $display, $m-y) {
     width: 100%;
     max-width: $width;
@@ -20,4 +22,14 @@
     font-size: 1rem;
     font-weight: 500;
     border-radius: 8px;
+}
+
+@mixin borderLineTop($color) {
+    width: $w-mixin-border-lines;
+    border-top: 1px solid $color;
+}
+
+@mixin borderLineBottom($color) {
+    width: $w-mixin-border-lines;
+    border-bottom: 1px solid $color;
 }
