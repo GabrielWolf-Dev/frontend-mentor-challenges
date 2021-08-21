@@ -5,12 +5,7 @@ $w-mixin-border-lines: 80%;
     max-width: $width;
     display: $display;
     padding: 0 2%;
-    
-    @if($display == 'grid') {
-        margin: $m-y 0;
-    } @else {
-        margin: $m-y auto;
-    }
+    margin: $m-y auto;
 }
 
 @mixin btn($width, $border, $bg, $color-text) {
