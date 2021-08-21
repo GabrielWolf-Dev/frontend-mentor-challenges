@@ -1,0 +1,38 @@
+.contact-form {
+    width: 100%;
+    background-color: $soft-blue;
+    text-align: center;
+    @extend .p-res-48;
+    color: white;
+
+    .content {
+        @extend .p-y-16;
+    }
+
+    .contact-form__form {
+        width: 100%;
+        max-width: 400px;
+        margin: 16px auto;
+
+        .contact-form__input, .contact-form__textarea {
+            width: 100%;
+            height: 42px;
+            border-radius: 12px;
+            margin: 8px 0;
+            padding-left: 16px;
+        }
+
+        .contact-form__textarea {
+            padding: 16px;
+            height: 120px;
+        }
+
+        .contact-form__submit {
+            @include btn(150px, 0, $soft-red, white);
+        }
+    }
+}
+
+@media (min-width: $w-mobile) {
+    .contact-form > .contact-form__form { max-width: 600px; }
+}

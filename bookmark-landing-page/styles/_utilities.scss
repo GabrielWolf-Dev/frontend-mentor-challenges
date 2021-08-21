@@ -17,3 +17,9 @@ span[data-isSelected=true] {
         width: 100%;
     }
 }
+
+.questions__anwers--active {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+}

@@ -27,6 +27,7 @@
           <li class="nav__items"><a class="text-white nav-links" href="#">Features</a></li>
           <li class="nav__items"><a class="text-white nav-links" href="#">Pricing</a></li>
           <li class="nav__items"><a class="text-white nav-links" href="#">Contact</a></li>
+          <li class="nav__items"><a class="text-white nav-links" href="#">Credits</a></li>
           <button class="btn-login">Login</button>
         </ul><!--nav-mobile__nav-->
 
@@ -42,6 +43,7 @@
         <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Features</a></li>
         <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Pricing</a></li>
         <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Contact</a></li>
+        <li class="nav__items"><a class="text-white nav-links" href="#">Credits</a></li>
         <button class="btn-login">Login</button>
       </ul>
     </nav>
@@ -166,53 +168,70 @@
     </aside><!--extensions__card-->
   </section><!--extensions-->
 
-  Frequently Asked Questions
-  
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+  <section class="questions">
+    <h2 class="subtitle text-blue-dark">Frequently Asked Questions</h2>
+    <p class="content text-gray">
+      Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.
+    </p>
 
-  <!-- Question 1 -->
-  What is Bookmark?
+    <ul class="questions__list-quest">
+      <li class="questions__quest">
+        <button class="questions__quest__btn content">What is Bookmark? <i class="fas fa-chevron-down"></i></button>
+        <p class="questions__anwers subcontent text-gray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </p>
+      </li>
+      <li class="questions__quest">
+        <button class="questions__quest__btn content">How can I request a new browser? <i class="fas fa-chevron-down"></i></button>
+        <p class="questions__anwers subcontent text-gray">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+        </p>
+      </li>
+      <li class="questions__quest">
+        <button class="questions__quest__btn content">Is there a mobile app? <i class="fas fa-chevron-down"></i></button>
+        <p class="questions__anwers subcontent text-gray">
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.
+        </p>
+      </li>
+      <li class="questions__quest">
+        <button class="questions__quest__btn content">What about other Chromium browsers? <i class="fas fa-chevron-down"></i></button>
+        <p class="questions__anwers subcontent text-gray">
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.
+        </p>
+      </li>
+    </ul>
 
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+    <button class="questions__btn">More Info</button>
+  </section><!--questions-->
 
-  <!-- Question 2 -->
-  How can I request a new browser?
+  <section class="contact-form">
+    <h2 class="title">35,000+ already joined</h2>
+    <p class="content">
+      Stay up-to-date with what we’re doing
+    </p><!--content-->
 
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+    <form class="contact-form__form" action="POST">
+      <input class="contact-form__input" required type="text" name="name" id="name" placeholder="Your name..." />
+      <input class="contact-form__input" required type="email" name="email" id="email" placeholder="Your E-mail..." />
+      <input class="contact-form__input" type="tel" name="phone" id="phone" placeholder="Phone" />
+      <textarea class="contact-form__textarea" name="content" id="content" placeholder="Your Message..."></textarea>
 
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
+      <button class="contact-form__submit" type="submit">Send E-mail</button>
+    </form><!--contact-form__form-->
+  </section><!--contact-form-->
 
   Features
   Pricing
   Contact
+  Credits
   
   <footer>
     <p class="attribution">

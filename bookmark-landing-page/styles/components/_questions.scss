@@ -1,0 +1,52 @@
+.questions {
+    @include container($w-mobile, block, 48px);
+    text-align: center;
+
+    .content {
+        @extend .p-y-24;
+    }
+
+    .questions__list-quest {
+        width: 100%;
+        max-width: 400px;
+        @extend .m-auto;
+        text-align: left;
+
+        .questions__quest {
+            position: relative;
+            @include borderLineBottom($grayish-blue);
+            padding: 8px 0;
+            @extend .m-auto;
+
+            .questions__quest__btn {
+                width: 100%;
+                font-weight: 600;
+                color: $dark-blue;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .questions__anwers {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 0 2% 8px 2%;
+            visibility: hidden;
+            opacity: 0;
+            transition: all ease-out .3s;
+        }
+    }
+
+    .questions__btn {
+        @include btn(120px, 0, $soft-blue, white);
+        @extend .m-y-48;
+    }
+}
+
+@media (min-width: $w-mobile) {
+    .questions {
+        .questions__list-quest { max-width: 600px; }
+    }
+}
