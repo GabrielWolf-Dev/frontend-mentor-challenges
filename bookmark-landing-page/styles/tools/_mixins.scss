@@ -1,11 +1,11 @@
 $w-mixin-border-lines: 80%;
 
-@mixin container($width, $display, $m-y) {
+@mixin container($width, $display, $p-y) {
     width: 100%;
     max-width: $width;
     display: $display;
-    padding: 0 2%;
-    margin: $m-y auto;
+    padding: $p-y 2%;
+    margin: 0 auto;
 }
 
 @mixin btn($width, $border, $bg, $color-text) {
