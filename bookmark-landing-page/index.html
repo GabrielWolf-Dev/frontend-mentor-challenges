@@ -77,21 +77,21 @@
     </p><!--content-->
 
     <ul class="features__list m-y-48">
-      <li class="features__item features__item--selected">
+      <li data-id="8" class="features__item features__item--selected">
         Simple Bookmarking
-        <span data-isSelected="true"></span>
+        <span></span>
       </li>
-      <li class="features__item">
+      <li data-id="11" class="features__item">
         Speedy Searching
-        <span data-isSelected="false"></span>
+        <span></span>
       </li>
-      <li class="features__item">
+      <li data-id="14" class="features__item">
         Easy Sharing
-        <span data-isSelected="false"></span>
+        <span></span>
       </li>
     </ul>
 
-    <main class="features__tab">
+    <main class="features__tab  features__tab--active">
       <img class="features__tab__img" src="./assets/images/illustration-features-tab-1.svg" alt="Feature Tab 1">
 
       <div class="features__tab__content">
@@ -104,30 +104,39 @@
 
         <button class="features__tab__btn">More Info</button>
       </div>
-    </main>
+    </main><!--features__tab-->
+
+    <main class="features__tab">
+      <img class="features__tab__img" src="./assets/images/illustration-features-tab-2.svg" alt="Feature Tab 1">
+
+      <div class="features__tab__content">
+        <h3 class="subtitle text-blue-dark">Intelligent search</h3>
+
+        <p class="features__tab__content">
+          Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.
+        </p><!--content-->
+
+        <button class="features__tab__btn">More Info</button>
+      </div>
+    </main><!--features__tab-->
+
+    <main class="features__tab">
+      <img class="features__tab__img" src="./assets/images/illustration-features-tab-3.svg" alt="Feature Tab 1">
+
+      <div class="features__tab__content">
+        <h3 class="subtitle text-blue-dark">Share your bookmarks</h3>
+
+        <p class="features__tab__content">
+          Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.
+        </p><!--content-->
+
+        <button class="features__tab__btn">More Info</button>
+      </div>
+    </main><!--features__tab-->
   </section><!--features-->
 
-  
-  
-  
-
-  
-
-<!--
-    Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
--->
   <section class="extensions">
     <header class="extensions__desc">
       <h2 class="title text-blue-dark">Download the extension</h2>
@@ -177,14 +186,14 @@
 
     <ul class="questions__list-quest">
       <li class="questions__quest">
-        <button class="questions__quest__btn content">What is Bookmark? <i class="fas fa-chevron-down"></i></button>
+        <button class="questions__quest__btn content">What is Bookmark? <i id="icon" class="fas fa-chevron-down"></i></button>
         <p class="questions__anwers subcontent text-gray">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
           justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
         </p>
       </li>
       <li class="questions__quest">
-        <button class="questions__quest__btn content">How can I request a new browser? <i class="fas fa-chevron-down"></i></button>
+        <button class="questions__quest__btn content">How can I request a new browser? <i id="icon" class="fas fa-chevron-down"></i></button>
         <p class="questions__anwers subcontent text-gray">
           Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
           Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
@@ -193,7 +202,7 @@
         </p>
       </li>
       <li class="questions__quest">
-        <button class="questions__quest__btn content">Is there a mobile app? <i class="fas fa-chevron-down"></i></button>
+        <button class="questions__quest__btn content">Is there a mobile app? <i id="icon" class="fas fa-chevron-down"></i></button>
         <p class="questions__anwers subcontent text-gray">
           Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
           urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
@@ -201,7 +210,7 @@
         </p>
       </li>
       <li class="questions__quest">
-        <button class="questions__quest__btn content">What about other Chromium browsers? <i class="fas fa-chevron-down"></i></button>
+        <button class="questions__quest__btn content">What about other Chromium browsers? <i id="icon" class="fas fa-chevron-down"></i></button>
         <p class="questions__anwers subcontent text-gray">
           Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
           vitae neque eget nisl gravida pellentesque non ut velit.

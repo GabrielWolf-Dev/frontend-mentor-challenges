@@ -3,7 +3,8 @@
     opacity: 1;
 }
 
-span[data-isSelected=true] {
+
+.features__item--selected > span {
     width: 45%;
     height: 3px;
     background-color: $soft-red;
@@ -17,6 +18,9 @@ span[data-isSelected=true] {
         width: 100%;
     }
 }
+
+.features__tab--active { display: flex; }
+.features__tab--disable { display: none; }
 
 .questions__anwers--active {
     visibility: visible;
