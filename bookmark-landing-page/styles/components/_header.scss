@@ -48,7 +48,7 @@
         padding: 16px 0;
         @include borderLineTop($color-border-lines);
 
-        &:nth-of-type(3) {
+        &:last-of-type {
             @include borderLineBottom($color-border-lines);
             margin-bottom: 24px;
         }
