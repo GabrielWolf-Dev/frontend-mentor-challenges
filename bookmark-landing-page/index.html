@@ -13,22 +13,21 @@
 <body>
   
   <header class="header">
-    <img src="./assets/images/logo-bookmark.svg" alt="Logo Boockmark" />
+    <a href="index.html"><img src="./assets/images/logo-bookmark.svg" alt="Logo Boockmark" /></a>
 
     <div class="nav-mobile-box">
       <button class="btn-menu-open"><i class="fas fa-bars"></i></button>
       <nav class="nav-mobile p-res-48">
         <header class="nav-mobile__header">
-          <img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" />
+          <a href="index.html"><img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" /></a>
           <button class="btn-menu-close"><i class="fas fa-times"></i></button>
         </header><!--nav-mobile__header-->
 
         <ul class="nav-mobile__nav">
-          <li class="nav__items"><a class="text-white nav-links" href="#">Features</a></li>
-          <li class="nav__items"><a class="text-white nav-links" href="#">Pricing</a></li>
-          <li class="nav__items"><a class="text-white nav-links" href="#">Contact</a></li>
-          <li class="nav__items"><a class="text-white nav-links" href="#">Credits</a></li>
-          <button class="btn-login">Login</button>
+          <li class="nav__items"><a class="text-white nav-links" href="#Features">Features</a></li>
+          <li class="nav__items"><a class="text-white nav-links" href="#Pricing">Pricing</a></li>
+          <li class="nav__items"><a class="text-white nav-links" href="#Contact">Contact</a></li>
+          <a class="text-white" href="login.html"><button class="btn-login">Login</button></a>
         </ul><!--nav-mobile__nav-->
 
         <footer class="nav-mobile__footer">
@@ -40,11 +39,11 @@
 
     <nav class="nav-desktop">
       <ul class="nav-desktop__list">
-        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Features</a></li>
-        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Pricing</a></li>
-        <li class="nav__items"><a class="text-blue-dark nav-links" href="#">Contact</a></li>
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#Features">Features</a></li>
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#Pricing">Pricing</a></li>
+        <li class="nav__items"><a class="text-blue-dark nav-links" href="#Contact">Contact</a></li>
         <li class="nav__items"><a class="text-white nav-links" href="#">Credits</a></li>
-        <button class="btn-login">Login</button>
+        <a class="text-white" href="login.html"><button class="btn-login">Login</button></a>
       </ul>
     </nav>
   </header><!--header-->
@@ -69,7 +68,7 @@
 
   <br>
 
-  <section class="features">
+  <section class="features" id="Features">
     <h2 class="subtitle text-blue-dark">Features</h2>
     <p class="content m-y-24 text-gray">
       Our aim is to make it quick and easy for you to access your favourite websites. 
@@ -137,7 +136,7 @@
     </main><!--features__tab-->
   </section><!--features-->
 
-  <section class="extensions">
+  <section class="extensions" id="Pricing">
     <header class="extensions__desc">
       <h2 class="title text-blue-dark">Download the extension</h2>
       <p class="content text-gray">
@@ -221,7 +220,7 @@
     <button class="questions__btn">More Info</button>
   </section><!--questions-->
 
-  <section class="contact-form">
+  <section class="contact-form" id="Contact">
     <h2 class="title">35,000+ already joined</h2>
     <p class="content">
       Stay up-to-date with what we’re doing
@@ -241,10 +240,9 @@
     <nav class="footer__nav">
       <ul class="footer__list-links">
         <li class="footer__list-links__link"><img src="./assets/images/logo-bookmark-white.svg" alt="Logo da Bookmark" /></li>
-        <li class="footer__list-links__link"><a class="text-white nav-links" href="#">Features</a></li>
-        <li class="footer__list-links__link"><a class="text-white nav-links" href="#">Pricing</a></li>
-        <li class="footer__list-links__link"><a class="text-white nav-links" href="#">Contact</a></li>
-        <li class="footer__list-links__link"><a class="text-white nav-links" href="#">Credits</a></li>
+        <li class="footer__list-links__link"><a class="text-white nav-links" href="#Features">Features</a></li>
+        <li class="footer__list-links__link"><a class="text-white nav-links" href="#Pricing">Pricing</a></li>
+        <li class="footer__list-links__link"><a class="text-white nav-links" href="#Contact">Contact</a></li>
       </ul><!--footer__list-links-->
 
       <ul class="footer__list-social">
