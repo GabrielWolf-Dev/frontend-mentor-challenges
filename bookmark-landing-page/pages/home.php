@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Frontend Mentor | Bookmark landing page</title>
-</head>
-<body>
-  
-  <header class="header">
-    <a href="index.html"><img src="./assets/images/logo-bookmark.svg" alt="Logo Boockmark" /></a>
+<header class="header">
+    <a href="<?php echo INCLUDE_PATH; ?>"><img src="<?php echo INCLUDE_PATH; ?>assets/images/logo-bookmark.svg" alt="Logo Boockmark" /></a>
 
     <div class="nav-mobile-box">
       <button class="btn-menu-open"><i class="fas fa-bars"></i></button>
       <nav class="nav-mobile p-res-48">
         <header class="nav-mobile__header">
-          <a href="index.html"><img src="./assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" /></a>
+          <a href="<?php echo INCLUDE_PATH; ?>"><img src="<?php echo INCLUDE_PATH; ?>assets/images/logo-bookmark-white.svg" alt="Logo Boockmark" /></a>
           <button class="btn-menu-close"><i class="fas fa-times"></i></button>
         </header><!--nav-mobile__header-->
 
@@ -27,7 +13,7 @@
           <li class="nav__items"><a class="text-white nav-links" href="#Features">Features</a></li>
           <li class="nav__items"><a class="text-white nav-links" href="#Pricing">Pricing</a></li>
           <li class="nav__items"><a class="text-white nav-links" href="#Contact">Contact</a></li>
-          <a class="text-white" href="login.html"><button class="btn-login">Login</button></a>
+          <a class="text-white" href="<?php echo INCLUDE_PATH; ?>login"><button class="btn-login">Login</button></a>
         </ul><!--nav-mobile__nav-->
 
         <footer class="nav-mobile__footer">
@@ -43,12 +29,12 @@
         <li class="nav__items"><a class="text-blue-dark nav-links" href="#Pricing">Pricing</a></li>
         <li class="nav__items"><a class="text-blue-dark nav-links" href="#Contact">Contact</a></li>
         <li class="nav__items"><a class="text-white nav-links" href="#">Credits</a></li>
-        <a class="text-white" href="login.html"><button class="btn-login">Login</button></a>
+        <a class="text-white" href="<?php echo INCLUDE_PATH; ?>login"><button class="btn-login">Login</button></a>
       </ul>
     </nav>
   </header><!--header-->
 
-  <section class="banner">
+<section class="banner">
     <main class="banner__content">
       <h1 class="title text-blue-dark">A Simple Bookmark Manager</h1>
       <p class="content text-gray">
@@ -61,8 +47,8 @@
     </main><!--banner__content-->
 
     <div class="banner__img-box">
-      <img class="banner__img m-auto" src="./assets/images/illustration-hero.svg" alt="Illustration hero">
-      <img class="banner__bg-el" src="./assets/images/bg-el.svg" alt="Background element">
+      <img class="banner__img m-auto" src="<?php echo INCLUDE_PATH; ?>assets/images/illustration-hero.svg" alt="Illustration hero">
+      <img class="banner__bg-el" src="<?php echo INCLUDE_PATH; ?>assets/images/bg-el.svg" alt="Background element">
     </div><!--banner__img-box-->
   </section><!--banner-->
 
@@ -91,7 +77,7 @@
     </ul>
 
     <main class="features__tab  features__tab--active">
-      <img class="features__tab__img" src="./assets/images/illustration-features-tab-1.svg" alt="Feature Tab 1">
+      <img class="features__tab__img" src="<?php echo INCLUDE_PATH; ?>assets/images/illustration-features-tab-1.svg" alt="Feature Tab 1">
 
       <div class="features__tab__content">
         <h3 class="subtitle text-blue-dark">Bookmark in one click</h3>
@@ -106,7 +92,7 @@
     </main><!--features__tab-->
 
     <main class="features__tab">
-      <img class="features__tab__img" src="./assets/images/illustration-features-tab-2.svg" alt="Feature Tab 1">
+      <img class="features__tab__img" src="<?php echo INCLUDE_PATH; ?>assets/images/illustration-features-tab-2.svg" alt="Feature Tab 1">
 
       <div class="features__tab__content">
         <h3 class="subtitle text-blue-dark">Intelligent search</h3>
@@ -121,7 +107,7 @@
     </main><!--features__tab-->
 
     <main class="features__tab">
-      <img class="features__tab__img" src="./assets/images/illustration-features-tab-3.svg" alt="Feature Tab 1">
+      <img class="features__tab__img" src="<?php echo INCLUDE_PATH; ?>assets/images/illustration-features-tab-3.svg" alt="Feature Tab 1">
 
       <div class="features__tab__content">
         <h3 class="subtitle text-blue-dark">Share your bookmarks</h3>
@@ -146,7 +132,7 @@
     </header><!--extensions__desc-->
 
     <aside class="extensions__card">
-      <img class="extensions__img" src="./assets/images/logo-chrome.svg" alt="Logo Google Chrome">
+      <img class="extensions__img" src="<?php echo INCLUDE_PATH; ?>assets/images/logo-chrome.svg" alt="Logo Google Chrome">
       <h3 class="subtitle text-blue-dark">Add to Chrome</h3>
       <p class="subcontent text-gray">
         Minimum version 62
@@ -156,7 +142,7 @@
     </aside><!--extensions__card-->
 
     <aside class="extensions__card">
-      <img class="extensions__img" src="./assets/images/logo-firefox.svg" alt="Logo Google Chrome">
+      <img class="extensions__img" src="<?php echo INCLUDE_PATH; ?>assets/images/logo-firefox.svg" alt="Logo Google Chrome">
       <h3 class="subtitle text-blue-dark">Add to Firefox</h3>
       <p class="subcontent text-gray">
         Minimum version 55
@@ -166,7 +152,7 @@
     </aside><!--extensions__card-->
     
     <aside class="extensions__card">
-      <img class="extensions__img" src="./assets/images/logo-opera.svg" alt="Logo Google Chrome">
+      <img class="extensions__img" src="<?php echo INCLUDE_PATH; ?>assets/images/logo-opera.svg" alt="Logo Google Chrome">
       <h3 class="subtitle text-blue-dark">Add to Opera</h3>
       <p class="subcontent text-gray">
         Minimum version 46
@@ -239,7 +225,7 @@
   <footer class="footer">
     <nav class="footer__nav">
       <ul class="footer__list-links">
-        <li class="footer__list-links__link"><img src="./assets/images/logo-bookmark-white.svg" alt="Logo da Bookmark" /></li>
+        <li class="footer__list-links__link"><img src="<?php echo INCLUDE_PATH; ?>assets/images/logo-bookmark-white.svg" alt="Logo da Bookmark" /></li>
         <li class="footer__list-links__link"><a class="text-white nav-links" href="#Features">Features</a></li>
         <li class="footer__list-links__link"><a class="text-white nav-links" href="#Pricing">Pricing</a></li>
         <li class="footer__list-links__link"><a class="text-white nav-links" href="#Contact">Contact</a></li>
@@ -255,12 +241,3 @@
       </ul><!--footer__list-social-->
     </nav><!--footer__nav-->
   </footer><!--footer-->
-
-  <article class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/GabrielWolf-Dev" target="_blank">GabrielWolf-Dev</a>.
-  </article>
-  <script src="./js/libs/all.min.js"></script>
-  <script type="module" src="./js/index.js"></script>
-</body>
-</html>
