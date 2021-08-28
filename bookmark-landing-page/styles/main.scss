@@ -5,7 +5,7 @@
 
 // Objects:
 @import './objects/fonts';
-@import './objects/el-colors';
+@import './objects/text-colors';
 @import './objects/spaces';
 
 // Mixins:
@@ -20,6 +20,7 @@
 @import './components/form';
 @import './components/footer';
 @import './components/login';
+@import './components/404';
 
 // Utilities:
 @import './utilities';

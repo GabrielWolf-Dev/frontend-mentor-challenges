@@ -30,5 +30,11 @@
     </nav>
 </header><!--header-->
 
-<h1>Erro!</h1>
-<a href="<?php echo INCLUDE_PATH; ?>">Voltar pra home</a>
+<section class="error">
+  <div>
+    <h1 class="title text-red">Essa página não existe :(</h1>
+    <a class="error__btn-link" href="<?php echo INCLUDE_PATH; ?>">Voltar pra home</a>
+  </div>
+  <div class="error__line"></div>
+  <img class="error__img" src="<?php echo INCLUDE_PATH; ?>assets/images/404.svg" alt="Erro 404 (Página não encontrada!)" />
+</section><!--error-->

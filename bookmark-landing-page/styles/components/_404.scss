@@ -1,0 +1,40 @@
+.error {
+    @include container($w-mobile, flex, 48px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 24px;
+
+
+    .error__btn-link {
+        display: inline-block;
+        @include btn(180px, 0, $soft-blue, white);
+        line-height: 42px;
+        margin-top: 24px;
+    }
+
+    .error__img {
+        width: 100%;
+        max-width: 300px;
+
+        @media (max-width: $w-mobile) { max-width: 450px; }
+    }
+}
+
+@media (min-width: $w-mobile) {
+    .error {
+        @include container($w-desktop, flex, 48px);
+        height: 100%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    
+        .error__line {
+            width: 2px;
+            height: 60%;
+            background-color: $grayish-blue;
+        }
+
+        .error__img { max-width: 600px; }
+    }
+}
