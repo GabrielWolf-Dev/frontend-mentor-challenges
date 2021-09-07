@@ -22,6 +22,16 @@
     } else { include('pages/404.php'); }
   ?>
 
+  <?php
+    include('Source/Support/Email.php');
+    $email = new Email();
+    $email->add(
+      "Título da mensagem",
+      "Conteúdo da mensagem<br> Com HTML :)"
+    );
+    $email->send("gabrielmbwolf@gmail.com", "Gabriel Wolf");
+  ?>
+
   <article class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/GabrielWolf-Dev" target="_blank">GabrielWolf-Dev</a>.
