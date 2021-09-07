@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php include_once('config.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -18,18 +18,8 @@
     $path = 'pages/'.$url.'.php';
 
     if(file_exists($path)) {
-      include($path);
-    } else { include('pages/404.php'); }
-  ?>
-
-  <?php
-    include('Source/Support/Email.php');
-    $email = new Email();
-    $email->add(
-      "Título da mensagem",
-      "Conteúdo da mensagem<br> Com HTML :)"
-    );
-    $email->send("gabrielmbwolf@gmail.com", "Gabriel Wolf");
+      include_once($path);
+    } else { include_once('pages/404.php'); }
   ?>
 
   <article class="attribution">

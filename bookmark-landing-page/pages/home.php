@@ -1,3 +1,12 @@
+<?php
+  require_once 'Source/Form.php';
+
+  if(isset($_POST['sendForm'])){
+    $form = new Form($_POST);
+    $form->sendForm();
+  }
+?>
+
 <header class="header">
     <a href="<?php echo INCLUDE_PATH; ?>"><img src="<?php echo INCLUDE_PATH; ?>assets/images/logo-bookmark.svg" alt="Logo Boockmark" /></a>
 
@@ -212,13 +221,13 @@
       Stay up-to-date with what we’re doing
     </p><!--content-->
 
-    <form class="contact-form__form" action="POST">
-      <input class="contact-form__input" required type="text" name="name" id="name" placeholder="Your name..." />
+    <form class="contact-form__form" method="POST" action="">
+      <input class="contact-form__input" required type="text" name="nome" id="name" placeholder="Your name..." />
       <input class="contact-form__input" required type="email" name="email" id="email" placeholder="Your E-mail..." />
-      <input class="contact-form__input" type="tel" name="phone" id="phone" placeholder="Phone" />
-      <textarea class="contact-form__textarea" name="content" id="content" placeholder="Your Message..."></textarea>
+      <input class="contact-form__input" required type="tel" name="telefone" id="phone" placeholder="Phone" />
+      <textarea class="contact-form__textarea" required name="mensagem" id="content" placeholder="Your Message..."></textarea>
 
-      <button class="contact-form__submit" type="submit">Send E-mail</button>
+      <button class="contact-form__submit" type="submit" name="sendForm">Send E-mail</button>
     </form><!--contact-form__form-->
   </section><!--contact-form-->
   

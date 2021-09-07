@@ -1,9 +1,7 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
 
 class Email {
     private $mail;
@@ -27,17 +25,29 @@ class Email {
     public function add($subject, $body){
         $this->mail->Subject = $subject;
         $this->mail->Body = $body;
+        $this->mail->AltBody = strip_tags($body);
     }
 
     public function send($email, $name){
         try{
             $this->mail->setFrom(MAIL['user'], MAIL['from_name']);
             $this->mail->addAddress($email, $name);
-
             $this->mail->send();
-            echo 'Message has been sent';
+
+            echo "<script>alert('Formulário enviado com sucesso!')</script>";
         } catch(Exception $err){
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $this->debug_to_consoleLog($err->getMessage());
+            echo "<script>
+                alert('Erro! Não foi possível enviar a mensagem :(');
+            </script>";
         }
+    }
+
+    protected function debug_to_consoleLog($data) {
+        $output = $data;
+        if (is_array($output))
+            $output = implode(',', $output);
+    
+        echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
     }
 }
