@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 class Email {
     private $mail;
+    private $isSuccess;
 
     function __construct() {
         $this->mail = new PHPMailer(true);
@@ -32,15 +33,20 @@ class Email {
         try{
             $this->mail->setFrom(MAIL['user'], MAIL['from_name']);
             $this->mail->addAddress($email, $name);
+            $this->isSuccess = true;
             $this->mail->send();
 
             echo "<script>alert('Formulário enviado com sucesso!')</script>";
         } catch(Exception $err){
             $this->debug_to_consoleLog($err->getMessage());
+            $this->isSuccess = false;
+
             echo "<script>
                 alert('Erro! Não foi possível enviar a mensagem :(');
             </script>";
         }
+
+        die($this->isSuccess);
     }
 
     protected function debug_to_consoleLog($data) {
