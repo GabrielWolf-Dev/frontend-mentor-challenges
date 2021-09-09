@@ -219,6 +219,11 @@
       <textarea class="contact-form__textarea" required name="mensagem" id="mensagem" placeholder="Your Message..."></textarea>
 
       <button class="contact-form__submit" type="submit" name="sendForm">Send E-mail</button>
+      <div class="contact-form__box-loading">
+        <div class="contact-form__loading-spin"></div>
+        <span>Carregando...</span>
+      </div><!--contact-form__box-loading
+      
     </form><!--contact-form__form-->
   </section><!--contact-form-->
   

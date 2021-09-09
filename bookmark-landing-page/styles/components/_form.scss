@@ -4,6 +4,7 @@
     text-align: center;
     @extend .p-res-48;
     color: white;
+    position: relative;
 
     .content {
         @extend .p-y-16;
@@ -12,7 +13,7 @@
     .contact-form__form {
         width: 100%;
         max-width: 400px;
-        margin: 16px auto;
+        margin: 16px auto 0 auto;
 
         .contact-form__input, .contact-form__textarea {
             width: 100%;
@@ -27,9 +28,48 @@
             height: 120px;
         }
 
+        .contact-form__box-loading {
+            width: 100%;
+            max-width: 250px;
+            margin-top: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .contact-form__loading-spin {
+            display: flex;
+            justify-content: center;
+            margin-right: 16px;
+        }
+    
+        .contact-form__loading-spin::after {
+            content: "";
+            width: 35px;
+            height: 35px;
+            border: 6px solid $dark-blue;
+            border-top-color: $soft-red;
+            border-bottom-color: $soft-red;
+            border-radius: 50%;
+            animation: loadingAnimation 1s ease infinite;
+        }
+
+        .contact-form__box-loading--active { display: flex; }
+    
+        @keyframes loadingAnimation {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
         .contact-form__submit {
             @include btn(150px, 0, $soft-red, white);
         }
+
+        .contact-form__submit--active { cursor: not-allowed; }
     }
 }
 

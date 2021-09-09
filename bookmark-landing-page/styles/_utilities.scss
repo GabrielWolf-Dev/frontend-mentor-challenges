@@ -27,3 +27,6 @@
     opacity: 1;
     position: relative;
 }
+
+.contact-form__input--error { border: 2px solid $soft-red; }
+.contact-form__input--check { border: 2px solid $green; }
