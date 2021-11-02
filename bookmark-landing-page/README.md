@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-In this landing page, I want apply my knowledge about form submission with PHP and JS that even though I'm Front-End developer, I need know about how make this things.
+In this landing page, I want apply my knowledge about form submission with PHP and JS that even though I'm Front-End developer, I need know about how make these things.
 
 So I learned several things about the PHP language and how it works even though it is a simple feature, using OOP and applying a routing system.
 
@@ -38,3 +38,4 @@ Theses values in ".env" file are consumed for constants in the ["config.php"](ht
         "from_name" => "User Mailer",
     ]);
 ```
+Then it's ready to be used! 🙂
