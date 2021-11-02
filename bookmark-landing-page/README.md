@@ -1,32 +1,40 @@
 # Frontend Mentor - Bookmark landing page
 
-![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
+In this landing page, I want apply my knowledge about form submission with PHP and JS that even though I'm Front-End developer, I need know about how make this things.
 
-## Welcome! 👋
+So I learned several things about the PHP language and how it works even though it is a simple feature, using OOP and applying a routing system.
 
-Thanks for checking out this front-end coding challenge.
+## Tools and tecnologies:
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- HTML 5
+- CSS3 with SASS applying ITCSS architecture + BEM
+- JavaScript for interact elements, animations and form validation for send the PHP script
+- PHP for system routing, form submission using PHPMailer managed in the [composer file](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/composer.json)
+- Assets provided to platform when I downloaded
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## Visualization:
+![Visualization the project in gif file](https://raw.githubusercontent.com/GabrielWolf-Dev/frontend-mentor-challenges/main/bookmark-landing-page/assets/bookmark-gif.gif)
 
-## The challenge
+## How to use this project?
+First, use some web server, in my case I used [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+<br>
+Clone the project or [download](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/archive/refs/heads/main.zip) this repository and move the file "bookmark-landing-page" in the "htdocs" file, if you are using XAMPP.
+<br>
+Start the web server and config the enviroment variables in the root project creating ".env" file.
+In this ".env" file, for configurate the form submission validate in the PHPMailer, you must insert HOST, PORT, EMAIL(Email that send form message), PASS, EMAIL_USER(Email that receive the form message).
+<br>
+Theses values in ".env" file are consumed for constants in the ["config.php"](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/config.php) file:
+```
+    // Variable Enviroment Config:
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the newsletter form is submitted if:
-  - The input field is empty
-  - The email address is not formatted correctly
-
-For this challenge you'll need to:
-
-- Create the rounded blue background shape with code
-- Change the `fill` and `stroke` color of the SVGs at specific points (the challenge can be completed using the single `logo-bookmark.svg` file provided)
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+    // Constants
+    define('MAIL', [
+        "host" => $_ENV['HOST'],
+        "port" => $_ENV['PORT'],
+        "user" => $_ENV['EMAIL'],
+        "passwd" => $_ENV['PASS'],
+        "from_name" => "User Mailer",
+    ]);
+```
