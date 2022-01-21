@@ -1,3 +1,5 @@
+/* -- Reset -- */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,3 +25,76 @@
     --secondary-grayish: hsl(210, 4%, 67%);
     --secondary-white: hsl(0, 0%, 100%);
 }
+
+ul { list-style-type: none; }
+
+button { cursor: pointer; border: 0; }
+
+/*---------------------------------------------------*/
+
+.header__btn-mobile, .header__mobile { display: none; }
+
+/* Mobile First */
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        padding: 24px 2%;
+        background-color: #3ebfff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__btn-mobile {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: transparent;
+    }
+
+    .header__mobile {
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        text-align: center;
+        background-color: var(--secondary-white);
+        padding: 16px 2%;
+    }
+
+    .triangle-menu {
+        width: 60px;
+        height: 70px;
+        background-image: url(../images/trangulo-menumobile.svg);
+        position: absolute;
+        top: -40px;
+        right: 0;
+    }
+
+    .header__mobile-list {
+        margin: 16px 0;
+    }
+
+    .header__mobile-item {
+        color: var(--secondary-darkGrayish);
+        text-decoration: none;
+    }
+
+    .header__mobile-btnList {
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 16px;
+        background-color: var(--primary-yellow);
+        margin: 16px auto;
+    }
+
+    .header__mobile-btnItem {
+        text-decoration: none;
+        color: var(--secondary-darkBlue-desaturated);
+    }
+}
+
+/*---------------------------------------------------*/

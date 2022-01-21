@@ -11,20 +11,24 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <a href="index.html">
       <img src="./images/logo.svg" alt="Logo">
     </a>
 
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+    <button class="header__btn-mobile">
+      <img src="./images/icon-hamburger.svg" alt="Button handler menu mobile">
+    </button>
+    
+    <ul class="header__mobile">
+      <div class="triangle-menu"></div>
+
+      <li class="header__mobile-list"><a class="header__mobile-item" href="#">About</a></li>
+      <li class="header__mobile-list"><a class="header__mobile-item" href="#">Services</a></li>
+      <li class="header__mobile-list"><a class="header__mobile-item" href="#">Projects</a></li>
+      <li class="header__mobile-btnList"><a class="header__mobile-btnItem" href="contact.html">Contact</a></li>
     </ul>
   </header>
-  
-
   We are creatives
 
   Transform your brand
@@ -69,5 +73,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./dist/bundle.js"></script>
 </body>
 </html>
