@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    /*
+        Barlow -- Contents;
+        Fraunces -- Tittles and Subtitles
+    */
+    font-family: 'Barlow', sans-serif;
+
+    /* Primary Colors: */
+    --primary-softRed: hsl(7, 99%, 70%);
+    --primary-yellow: hsl(51, 100%, 49%);
+    --primary-darkCian-desaturated: hsl(167, 40%, 24%);
+    --primary-darkBLue: hsl(198, 62%, 26%);
+    --primary-darkCian-moderate: hsl(168, 34%, 41%);
+
+    /* Neutral colors: */
+    --secondary-darkBlue-desaturated: hsl(212, 27%, 19%);
+    --secondary-darkGrayish: hsl(213, 9%, 39%);
+    --secondary-darkBlue-grayish: hsl(232, 10%, 55%);
+    --secondary-grayish: hsl(210, 4%, 67%);
+    --secondary-white: hsl(0, 0%, 100%);
+}
