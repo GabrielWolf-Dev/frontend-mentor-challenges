@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
     /*
         Barlow -- Contents;
         Fraunces -- Tittles and Subtitles
@@ -31,69 +31,145 @@ ul { list-style-type: none; }
 button { cursor: pointer; border: 0; }
 
 /*---------------------------------------------------*/
+/* Default Styles: */
 
-.header__btn-mobile, .header__mobile { display: none; }
+.title {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--secondary-white);
+}
 
+.mytop-48 {
+    margin-top: 48px;
+}
+
+/*---------------------------------------------------*/
 /* Mobile First */
 
-@media (max-width: 768px) {
-    .header {
-        width: 100%;
-        padding: 24px 2%;
-        background-color: #3ebfff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.header__desktop, .header__mobile { display: none; }
+
+.header {
+    width: 100%;
+    padding: 24px 2%;
+    background-color: #3ebfff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btn-mobile {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+}
+
+.header__mobile {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: var(--secondary-white);
+    padding: 16px 2%;
+}
+
+.triangle-menu {
+    width: 60px;
+    height: 70px;
+    background-image: url(../images/trangulo-menumobile.svg);
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.header__mobile-list {
+    margin: 16px 0;
+}
+
+.header__mobile-item {
+    color: var(--secondary-darkGrayish);
+    text-decoration: none;
+}
+
+.header__mobile-btnList {
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    background-color: var(--primary-yellow);
+    margin: 16px auto;
+}
+
+.header__mobile-btnItem {
+    text-decoration: none;
+    color: var(--secondary-darkBlue-desaturated);
+}
+
+.banner {
+    width: 100%;
+    min-height: 400px;
+    padding: 48px 2%;
+    background-image: url(../images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #3ebfff;
+    text-align: center;
+}
+
+@media (min-width: 320px){
+    .banner {
+        background-image: url(../images/desktop/image-header.jpg);
+        min-height: 400px;
+        background-size: cover;
+    }
+}
+
+/*---------------------------------------------------*/
+/* Layout Desktop */
+
+@media (min-width: 768px) {
+    * {
+        font-size: 18px;
     }
 
-    .header__btn-mobile {
-        display: block;
-        width: 32px;
-        height: 32px;
-        background: transparent;
+    .header__desktop { display: block; }
+
+    .header__btn-mobile, .header__mobile { display: none; }
+
+    /*----------------------------------------------------------*/
+
+    .header__desktop-list {
+        display: inline-block;
+        margin: 0 16px;
     }
 
-    .header__mobile {
-        width: 90%;
-        position: absolute;
-        left: 50%;
-        top: 100px;
-        transform: translateX(-50%);
-        text-align: center;
-        background-color: var(--secondary-white);
-        padding: 16px 2%;
-    }
-
-    .triangle-menu {
-        width: 60px;
-        height: 70px;
-        background-image: url(../images/trangulo-menumobile.svg);
-        position: absolute;
-        top: -40px;
-        right: 0;
-    }
-
-    .header__mobile-list {
-        margin: 16px 0;
-    }
-
-    .header__mobile-item {
-        color: var(--secondary-darkGrayish);
+    .header__desktop-item {
+        color: var(--secondary-white);
         text-decoration: none;
     }
 
-    .header__mobile-btnList {
-        width: 120px;
+    .header__desktop-btnList {
+        width: 100px;
         height: 32px;
         line-height: 32px;
+        text-align: center;
+        background-color: var(--secondary-white);
         border-radius: 16px;
-        background-color: var(--primary-yellow);
-        margin: 16px auto;
+        display: inline-block;
     }
 
-    .header__mobile-btnItem {
+    .header__desktop-btnItem {
         text-decoration: none;
         color: var(--secondary-darkBlue-desaturated);
+    }
+
+    .banner {
+        background-image: url(../images/desktop/image-header.jpg);
+        background-size: contain;
     }
 }
 
