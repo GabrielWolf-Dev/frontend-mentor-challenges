@@ -99,7 +99,7 @@ fieldset { border: none; }
 
 /* Header */
 
-.header__desktop, .header__mobile { display: none; }
+.header__desktop { display: none; }
 
 .header {
     width: 100%;
@@ -126,6 +126,9 @@ fieldset { border: none; }
     text-align: center;
     background-color: var(--secondary-white);
     padding: 16px 2%;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .triangle-menu {
@@ -275,6 +278,49 @@ fieldset { border: none; }
     margin-top: -4px;
 }
 
+/*---------------------------------------------------*/
+/* Form Contact */
+
+.form-contact {
+    width: 100%;
+    max-width: 600px;
+    margin: 48px auto;
+    text-align: center;
+}
+
+.form-contact__label {
+    display: block;
+    text-align: left;
+    margin: 8px 0 8px 8px;
+}
+
+.form-contact__input {
+    width: 100%;
+    height: 42px;
+    padding-left: 8px;
+    display: inline-block;
+}
+
+.form-contact__textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+.form-contact__button {
+    width: 120px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: var(--primary-softRed);
+    color: var(--secondary-white);
+    margin-top: 24px;
+    transition: all .3s ease-out;
+}
+
+.form-contact__button:hover {
+    background-color: var(--secondary-darkBlue-desaturated);
+}
 
 @media (min-width: 320px){
     .banner {
@@ -402,3 +448,8 @@ fieldset { border: none; }
 }
 
 /*---------------------------------------------------*/
+/* Actives Elements(Interactive with JavaScript) */
+.header__mobile--active {
+    visibility: visible;
+    opacity: 1;
+}

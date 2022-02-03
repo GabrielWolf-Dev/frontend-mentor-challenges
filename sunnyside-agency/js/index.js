@@ -1,6 +1,5 @@
-import $ from 'jquery';
+import menuMobile from './scripts/menuMobile.js';
+import validate from './scripts/validate.js';
 
-// Menu Mobile:
-$('.header__btn-mobile').click(() => {
-    $('.header__mobile').fadeToggle();
-});
+menuMobile();
+validate();
