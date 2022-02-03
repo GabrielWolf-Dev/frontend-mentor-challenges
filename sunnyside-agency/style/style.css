@@ -30,6 +30,8 @@ ul { list-style-type: none; }
 
 button { cursor: pointer; border: 0; }
 
+fieldset { border: none; }
+
 /*---------------------------------------------------*/
 /* Default Styles: */
 
@@ -63,6 +65,18 @@ button { cursor: pointer; border: 0; }
     margin-bottom: 24px;
 }
 
+.mtop-16 {
+    margin-top: 16px;
+}
+
+.my-24 {
+    margin: 24px 0;
+}
+
+.px-4per {
+    padding: 0 4%;
+}
+
 .btn-insights {
     font-size: 1.25rem;
     font-family: 'Fraunces', sans-serif;
@@ -77,6 +91,8 @@ button { cursor: pointer; border: 0; }
 }
 
 .btn-yellow:hover { text-decoration: underline hsl(51, 100%, 49%) solid 8px; }
+
+.gray { color: var(--secondary-darkBlue-grayish); } 
 
 /*---------------------------------------------------*/
 /* Mobile First */
@@ -206,6 +222,60 @@ button { cursor: pointer; border: 0; }
     transform: translateX(-50%);
 }
 
+/*---------------------------------------------------*/
+/* Depoiments: */
+.depoiments {
+    width: 100%;
+    padding: 48px 2%;
+    text-align: center;
+    background-color: var(--secondary-white);
+}
+
+.depoiments__flex {
+    width: 100%;
+    max-width: 1280px;
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.depoiments__img-client {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.depoiments__client-name {
+    font-size: 1.25rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-darkBlue-desaturated);
+}
+
+.depoiments__client-work {
+    color: var(--secondary-grayish);
+}
+
+/*---------------------------------------------------*/
+/* Gallery Products */
+
+.gallery-prod {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-prod__img {
+    width: 100%;
+    display: inline-block;
+    margin-top: -4px;
+}
+
+
 @media (min-width: 320px){
     .banner {
         background-image: url(../images/desktop/image-header.jpg);
@@ -296,6 +366,32 @@ button { cursor: pointer; border: 0; }
 
     .btn-insights {
         text-underline-offset: -15%;
+    }
+
+    /*---------------------------------------------------*/
+    /* Depoiments */
+
+    .depoiments__flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    /*---------------------------------------------------*/
+    /* Gallery Products */
+
+    .gallery-prod {
+        justify-content: initial;
+    }
+
+    .gallery-prod__img { width: 50%; }
+    
+    .gallery-prod__imgs-box {
+        width: 50%;
+        display: flex;
+        align-items: center;
     }
 }
 
