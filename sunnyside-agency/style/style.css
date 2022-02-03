@@ -322,6 +322,45 @@ fieldset { border: none; }
     background-color: var(--secondary-darkBlue-desaturated);
 }
 
+/*---------------------------------------------------*/
+/* Insights Section */
+
+.footer {
+    width: 100%;
+    padding: 48px 2% 24px 2%;
+    margin-top: -4px;
+    background-color: var(--primary-darkCian-moderate);
+    color: var(--primary-darkCian-desaturated);
+    text-align: center;
+}
+
+.footer__logo {
+    display: inline-block;
+}
+
+.footer__list-menu {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 24px auto;
+}
+
+.footer__item-list{
+    text-decoration: none;
+    color: var(--primary-darkCian-desaturated);
+    font-weight: 500;
+    font-size: 1.15rem;
+    transition: .3s ease-out;
+}
+
+.footer__item-list:hover { color: var(--secondary-darkBlue-desaturated); }
+
+.footer__link {
+    color: var(--secondary-darkBlue-desaturated);
+}
+
 @media (min-width: 320px){
     .banner {
         background-image: url(../images/desktop/image-header.jpg);
