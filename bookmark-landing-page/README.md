@@ -1,29 +1,28 @@
 # Frontend Mentor - Bookmark landing page
 
-In this landing page, I want apply my knowledge about form submission with PHP and JS that even though I'm Front-End developer, I need know about how make these things.
+Nesta landing page, quero aplicar meu conhecimento sobre envio de formulários com PHP e JS.
 
-So I learned several things about the PHP language and how it works even though it is a simple feature, using OOP and applying a routing system.
-
-## Tools and tecnologies:
+## Tecnologias:
 
 - HTML 5
-- CSS3 with SASS applying ITCSS architecture + BEM
-- JavaScript for interact elements, animations and form validation for send the PHP script
-- PHP for system routing, form submission using PHPMailer managed in the [composer file](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/composer.json)
-- Assets provided to platform when I downloaded
+- CSS3 com SASS aplicando arquitetura ITCSS + BEM
+- JavaScript para elementos de interação, animações e validação de formulário para envio do script PHP
+- PHP para roteamento do sistema, envio de formulário usando PHPMailer gerenciado no [arquivo do composer](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/composer.json)
 
-## Visualization:
+## Demonstração:
+
 ![Visualization the project in gif file](https://raw.githubusercontent.com/GabrielWolf-Dev/frontend-mentor-challenges/main/bookmark-landing-page/assets/bookmark-gif.gif)
 
-## How to use this project?
-First, use some web server, in my case I used [XAMPP](https://www.apachefriends.org/pt_br/index.html).
+## Como usar este projeto?
+
+. Primeiro, use algum servidor web, no meu caso usei [XAMPP](https://www.apachefriends.org/pt_br/index.html).
 <br>
-Clone the project or [download](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/archive/refs/heads/main.zip) this repository and move the file "bookmark-landing-page" in the "htdocs" file, if you are using XAMPP.
+. Clone o projeto ou [baixe](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/archive/refs/heads/main.zip) este repositório e mova o arquivo "bookmark-landing-page" em o arquivo "htdocs", se você estiver usando o XAMPP.
 <br>
-Start the web server and config the enviroment variables in the root project creating ".env" file.
-In this ".env" file, for configurate the form submission validate in the PHPMailer, you must insert HOST, PORT, EMAIL(Email that send form message), PASS, EMAIL_USER(Email that receive the form message).
+. Inicie o servidor web e configure as variáveis de ambiente no projeto raiz criando o arquivo ".env".
+Neste arquivo ".env", para configurar a validação do envio do formulário no PHPMailer, deve-se inserir HOST, PORT, EMAIL(Email que envia a mensagem do formulário), PASS, EMAIL_USER(Email que recebe a mensagem do formulário).
 <br>
-Theses values in ".env" file are consumed for constants in the ["config.php"](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/config.php) file:
+. Esses valores no arquivo ".env" são consumidos por constantes no ["config.php"](https://github.com/GabrielWolf-Dev/frontend-mentor-challenges/blob/main/bookmark-landing-page/config.php) arquivo:
 ```
     // Variable Enviroment Config:
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -38,4 +37,3 @@ Theses values in ".env" file are consumed for constants in the ["config.php"](ht
         "from_name" => "User Mailer",
     ]);
 ```
-Then it's ready to be used! 🙂
